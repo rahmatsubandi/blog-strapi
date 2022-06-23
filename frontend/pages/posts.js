@@ -12,7 +12,7 @@ export default function Posts() {
   return (
     <Layout>
       <Head>
-        <title>Posts &mdash; Epictetus</title>
+        <title>Posts &mdash; BlogStrap</title>
       </Head>
       <Container>
         <SectionHeader>UI Design</SectionHeader>
