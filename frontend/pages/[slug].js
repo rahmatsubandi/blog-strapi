@@ -1,4 +1,3 @@
-import Layout from "@components/Layout";
 import Container from "@components/Container";
 import PostMetaTitle from "@components/PostMetaTitle";
 import PostAuthor from "@components/PostAuthor";
@@ -38,9 +37,9 @@ export default function Detail({
 }) {
   // console.log(single);
   return (
-    <Layout>
+    <>
       <Head>
-        <title>{title} &mdash; BlogStrap</title>
+        <title>{title}</title>
       </Head>
       <Container>
         <div className="md:w-6/12 w-full mx-auto flex items-center flex-col">
@@ -67,6 +66,6 @@ export default function Detail({
           <ReactMarkdown className="prose">{content}</ReactMarkdown>
         </div>
       </Container>
-    </Layout>
+    </>
   );
 }

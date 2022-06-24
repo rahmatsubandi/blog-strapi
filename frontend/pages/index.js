@@ -1,10 +1,7 @@
-import { useState } from "react";
 import Head from "next/head";
 import FeaturedPost from "@components/FeaturedPost";
-import CardPost from "@components/CardPost";
 import Container from "@components/Container";
-import Layout from "@components/Layout";
-import mockPosts from "../utils/posts.json";
+import PostList from "@components/PostList";
 
 export async function getServerSideProps() {
   const reqFeatured = await fetch(
@@ -25,23 +22,16 @@ export async function getServerSideProps() {
   };
 }
 
-export default function Home({ featured, posts: initialPosts }) {
-  const [posts, setPosts] = useState(initialPosts);
+export default function Home({ featured, posts }) {
   return (
-    <Layout>
+    <>
       <Head>
         <title>Home &mdash; BlogStrap</title>
       </Head>
       <Container>
         {featured && <FeaturedPost {...featured} />}
-        <div className="flex -mx-4 flex-wrap mt-6">
-          {posts.map((post) => (
-            <div key={post.id} className="md:w-4/12 w-full px-4 py-6">
-              <CardPost {...post} />
-            </div>
-          ))}
-        </div>
+        <PostList posts={posts} />
       </Container>
-    </Layout>
+    </>
   );
 }

@@ -15,15 +15,17 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ["Roboto", "Arial", "sans-serif"],
+        sans: ["Playfair Display", "Arial", "sans-serif"],
       },
       typography: {
         DEFAULT: {
           css: {
             color: "#ffffff",
             "h1, h2, h3, h4, h5, h6": {
-              fontFamily: "heading",
               color: "#ffffff",
+            },
+            a: {
+              color: "#638596",
             },
             maxWidth: "100%",
           },
