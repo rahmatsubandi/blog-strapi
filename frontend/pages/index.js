@@ -1,7 +1,7 @@
-import Head from "next/head";
-import FeaturedPost from "@components/FeaturedPost";
 import Container from "@components/Container";
+import FeaturedPost from "@components/FeaturedPost";
 import PostList from "@components/PostList";
+import Head from "next/head";
 
 export async function getServerSideProps() {
   const reqFeatured = await fetch(

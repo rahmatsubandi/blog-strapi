@@ -1,7 +1,7 @@
-import Link from "next/link";
-import { useState } from "react";
 import Container from "@components/Container";
+import Link from "next/link";
 import Router from "next/router";
+import { useState } from "react";
 
 export default function Navbar({ categories }) {
   const [keyword, setKeyword] = useState(false);
@@ -36,6 +36,7 @@ export default function Navbar({ categories }) {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
+                {" "}
                 <g opacity="0.4">
                   <path
                     d="M3 12H21"
@@ -43,21 +44,21 @@ export default function Navbar({ categories }) {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                  />
+                  />{" "}
                   <path
                     d="M3 6H21"
                     stroke="white"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                  />
+                  />{" "}
                   <path
                     d="M3 18H21"
                     stroke="white"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                  />
+                  />{" "}
                 </g>
               </svg>
             </button>
@@ -82,6 +83,7 @@ export default function Navbar({ categories }) {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
+                {" "}
                 <g opacity="0.4">
                   <path
                     d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
@@ -89,14 +91,14 @@ export default function Navbar({ categories }) {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                  />
+                  />{" "}
                   <path
                     d="M21 21L16.65 16.65"
                     stroke="white"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                  />
+                  />{" "}
                 </g>
               </svg>
             </button>
@@ -106,10 +108,12 @@ export default function Navbar({ categories }) {
               offcavnas ? "left-0" : "-left-full"
             }`}
           >
+            {" "}
             <button
               className="absolute top-10 right-10 lg:hidden"
               onClick={() => setOffcanvas(false)}
             >
+              {" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -122,11 +126,13 @@ export default function Navbar({ categories }) {
                 strokeLinejoin="round"
                 className="feather feather-x"
               >
+                {" "}
                 <line x1="18" y1="6" x2="6" y2="18"></line>
                 <line x1="6" y1="6" x2="18" y2="18"></line>
               </svg>
             </button>
             <ul className="lg:space-x-14 flex lg:items-center flex-col lg:flex-row space-y-4 lg:space-y-0">
+              {" "}
               {items.map((item) => (
                 <li key={item.name}>
                   <Link href={item.href}>

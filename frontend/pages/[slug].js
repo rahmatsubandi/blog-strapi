@@ -1,9 +1,9 @@
 import Container from "@components/Container";
-import PostMetaTitle from "@components/PostMetaTitle";
 import PostAuthor from "@components/PostAuthor";
+import PostMetaTitle from "@components/PostMetaTitle";
 import Head from "next/head";
-import { formatDate } from "utils/utils";
 import ReactMarkdown from "react-markdown";
+import { formatDate } from "utils/utils";
 
 export async function getServerSideProps({ params: { slug } }) {
   // console.log(params);
@@ -48,7 +48,7 @@ export default function Detail({
             date={formatDate(published_at)}
             title={title}
             center
-          />
+          />{" "}
           <PostAuthor
             authorName={author.name}
             authorJob={author.job}
@@ -61,7 +61,10 @@ export default function Detail({
             className="w-full rounded-lg"
           />
         </div>
-        <div className="md:w-8/12 w-full mx-auto leading-relaxed">
+        <div
+          className="md:w-8/12 w - full mx - auto leading -
+               relaxed "
+        >
           <p className="text-xl mb-4">{headline}</p>
           <ReactMarkdown className="prose">{content}</ReactMarkdown>
         </div>
