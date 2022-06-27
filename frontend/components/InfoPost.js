@@ -1,7 +1,7 @@
 import PostAuthor from "@components/PostAuthor";
 import PostMetaTitle from "@components/PostMetaTitle";
 
-import { formatDate } from "../utils/utils";
+import {formatDate} from "../utils/utils";
 
 export default function InfoPost({
   category,
@@ -16,23 +16,19 @@ export default function InfoPost({
   return (
     <>
       <PostMetaTitle
-        category={category}
-        date={formatDate(date)}
-        title={title}
-        slug={slug}
-      />
+  category = {category} date = {formatDate(date)} title = {title} slug =
+  { slug } />
       <p
-        className="text-white/60 mt - 5 w - 10 / 12 text -
-      sm text -
-      justify "
+        className="text-white/60 mt - 5 w -
+      10 / 12 text - sm text - justify "
       >
-        {shortDescription}
-      </p>
+      {shortDescription}<
+          /p>
       <PostAuthor
         authorName={authorName}
         authorJob={authorJob}
         authorAvatar={authorAvatar}
+      /><
       />
-    </>
   );
 }
