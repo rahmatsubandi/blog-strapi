@@ -1,3 +1,3 @@
-# strapi blog (backend)
+# strapi blog
 
-This for the deployment backend
+This sample or learning CMS API Strapi(Backend). And for (Frontend) using NextJS, TailwindCSS
