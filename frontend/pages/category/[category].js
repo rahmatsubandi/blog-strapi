@@ -1,6 +1,6 @@
 import Container from "@components/Container";
-import SectionHeader from "@components/SectionHeader";
 import PostList from "@components/PostList";
+import SectionHeader from "@components/SectionHeader";
 import Head from "next/head";
 
 export async function getServerSideProps({
@@ -29,7 +29,7 @@ export default function Posts({ posts, category }) {
   return (
     <>
       <Head>
-        <title>Category &mdash; {category.name}</title>
+        <title>Category & mdash; {category.name}</title>
       </Head>
       <Container>
         <SectionHeader>{category.name}</SectionHeader>

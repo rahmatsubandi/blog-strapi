@@ -1,6 +1,7 @@
+import "tailwindcss/tailwind.css";
+
 import Layout from "@components/Layout";
 import App from "next/app";
-import "tailwindcss/tailwind.css";
 
 function MyApp({ Component, pageProps, categories }) {
   return (

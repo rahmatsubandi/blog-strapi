@@ -1,6 +1,6 @@
 import Container from "@components/Container";
-import SectionHeader from "@components/SectionHeader";
 import PostList from "@components/PostList";
+import SectionHeader from "@components/SectionHeader";
 import Head from "next/head";
 
 export async function getServerSideProps({ query: { q } }) {

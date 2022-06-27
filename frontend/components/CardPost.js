@@ -1,5 +1,5 @@
-import Link from "next/link";
 import InfoPost from "@components/InfoPost";
+import Link from "next/link";
 
 export default function CardPost({
   slug,
@@ -19,7 +19,7 @@ export default function CardPost({
               process.env.NEXT_PUBLIC_URLAPI + thumbnail.formats.thumbnail.url
             }
             className="w-full rounded mb-4"
-          />
+          />{" "}
         </a>
       </Link>
       <InfoPost

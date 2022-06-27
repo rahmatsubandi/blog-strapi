@@ -1,5 +1,6 @@
-import PostMetaTitle from "@components/PostMetaTitle";
 import PostAuthor from "@components/PostAuthor";
+import PostMetaTitle from "@components/PostMetaTitle";
+
 import { formatDate } from "../utils/utils";
 
 export default function InfoPost({
@@ -20,7 +21,11 @@ export default function InfoPost({
         title={title}
         slug={slug}
       />
-      <p className="text-white/60 mt-5 w-10/12 text-sm text-justify">
+      <p
+        className="text-white/60 mt - 5 w - 10 / 12 text -
+      sm text -
+      justify "
+      >
         {shortDescription}
       </p>
       <PostAuthor
