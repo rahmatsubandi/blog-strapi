@@ -3,8 +3,7 @@ import CardPost from "@components/CardPost";
 export default function PostList({
   posts,
   noresultTitle = "No result 😓",
-  noresultDecription =
-      "We couldn't find any posts your keyword. Please try another keyword.",
+  noresultDecription = "We couldn't find any posts your keyword. Please try another keyword.",
 }) {
   return (
     <div className="flex -mx-4 flex-wrap mt-6">
@@ -18,8 +17,7 @@ export default function PostList({
       ) : (
         posts.map((post) => (
           <div key={post.id} className="md:w-4/12 w-full px-4 py-6">
-            <CardPost {
-    ...post} />
+            <CardPost {...post} />
           </div>
         ))
       )}

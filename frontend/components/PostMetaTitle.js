@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function PostMetaTitle({category, title, date, slug, center}) {
+export default function PostMetaTitle({ category, title, date, slug, center }) {
   return (
     <>
       <div className="flex items-center text-white/60 text-sm space-x-4">

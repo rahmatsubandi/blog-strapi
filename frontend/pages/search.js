@@ -3,20 +3,21 @@ import PostList from "@components/PostList";
 import SectionHeader from "@components/SectionHeader";
 import Head from "next/head";
 
-export async function getServerSideProps({query : {q}}) {
-  const reqPosts = await fetch(process.env.NEXT_PUBLIC_URLAPI +
-                               "/posts?title_contains=" + q);
+export async function getServerSideProps({ query: { q } }) {
+  const reqPosts = await fetch(
+    process.env.NEXT_PUBLIC_URLAPI + "/posts?title_contains=" + q
+  );
   const posts = await reqPosts.json();
 
   return {
-    props : {
+    props: {
       posts,
       q,
     },
   };
 }
 
-export default function Search({posts, q}) {
+export default function Search({ posts, q }) {
   return (
     <>
       <Head>

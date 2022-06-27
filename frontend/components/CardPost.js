@@ -15,10 +15,14 @@ export default function CardPost({
       <Link href={`/${slug}`}>
         <a>
           <img
-  src = {process.env.NEXT_PUBLIC_URLAPI +
-         thumbnail.formats.thumbnail.url} className =
-      "w-full rounded mb-4" / > {" "}</a>
-      </Link>< InfoPost
+            src={
+              process.env.NEXT_PUBLIC_URLAPI + thumbnail.formats.thumbnail.url
+            }
+            className="w-full rounded mb-4"
+          />{" "}
+        </a>
+      </Link>
+      <InfoPost
         slug={slug}
         category={category.name}
         date={published_at}
@@ -26,8 +30,7 @@ export default function CardPost({
         shortDescription={headline}
         authorAvatar={process.env.NEXT_PUBLIC_URLAPI + author.avatar.url}
         authorName={author.name}
-        authorJob={
-    author.job}
+        authorJob={author.job}
       />
     </article>
   );
